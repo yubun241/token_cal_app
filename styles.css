@@ -1,17 +1,27 @@
-#token-counter-badge {
+
+#ts-robust-container {
     position: fixed;
-    top: 15px;
-    right: 70px; /* 他のUIボタンと重なりにくい位置 */
-    padding: 6px 14px;
-    background-color: #10b981;
+    top: 100px;
+    right: 20px;
+    z-index: 9999999;
+    background: #10b981;
     color: white;
-    border-radius: 20px;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 14px;
     font-weight: bold;
-    z-index: 10000;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255,255,255,0.3);
-    pointer-events: none;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    user-select: none;
+    transition: all 0.2s ease;
+    border: 2px solid white;
+}
+#ts-robust-container:hover {
+    background: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+#ts-robust-container:active {
+    transform: scale(0.95);
 }

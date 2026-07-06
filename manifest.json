@@ -1,19 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "AI Token Saver - Multi",
-  "version": "1.2",
-  "description": "ChatGPT, Claude, Gemini, ExaBaseでトークン量を可視化し節約を促します",
+  "name": "AI Token Saver Robust",
+  "version": "2.2",
+  "description": "バッジクリックで節約を実行する堅牢版",
   "permissions": ["activeTab"],
-  "content_scripts": [
-    {
-      "matches": [
-        "https://chatgpt.com/*",
-        "https://claude.ai/*",
-        "https://gemini.google.com/*",
-        "https://*.exabase.ai/*"
-      ],
-      "js": ["content.js"],
-      "css": ["styles.css"]
-    }
-  ]
+  "content_scripts": [{
+    "matches": ["https://chatgpt.com/*", "https://claude.ai/*", "https://gemini.google.com/*", "https://*.exabase.ai/*"],
+    "js": ["content.js"],
+    "css": ["styles.css"]
+  }]
 }

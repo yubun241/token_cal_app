@@ -1,0 +1,17 @@
+#token-counter-badge {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 15px;
+    background-color: #10b981;
+    color: white;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255,255,255,0.2);
+}

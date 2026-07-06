@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "AI Token Counter for ChatGPT",
+  "version": "1.0",
+  "description": "ChatGPTの入力トークン量をリアルタイムで表示します",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

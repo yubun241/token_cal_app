@@ -1,12 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "AI Token Counter for ChatGPT",
-  "version": "1.0",
-  "description": "ChatGPTの入力トークン量をリアルタイムで表示します",
+  "name": "AI Token Saver - Multi",
+  "version": "1.2",
+  "description": "ChatGPT, Claude, Gemini, ExaBaseでトークン量を可視化し節約を促します",
   "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["https://chatgpt.com/*"],
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://*.exabase.ai/*"
+      ],
       "js": ["content.js"],
       "css": ["styles.css"]
     }
